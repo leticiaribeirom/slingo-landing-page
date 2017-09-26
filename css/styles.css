@@ -61,7 +61,7 @@ p {
     padding: 0;
 }
 
-/* .navbar-default {
+.navbar-default {
     border-color: rgba(35,35,35,.05);
     background-color: #341f4a;
     -webkit-transition: all .4s;
@@ -70,14 +70,15 @@ p {
 }
 
 .navbar-header > .navbar-brand {
-    padding: 15px;
+    padding: 10px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
     transition: padding .2s ease-in;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-nav>li>a:hover  {
     background-color: #341f4a;
+    color: #e9e6ec !important;
 }
 .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
     border-color: transparent;
@@ -86,30 +87,22 @@ p {
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
-    color: #eee;
+    color: #e9e6ec;
+    background-color: #6e5b83;
+    padding: 5px 10px;
+    margin: 10px 15px;
+
 }
 
-.navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
-    color: #9c27b0;
+
+@media(min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
 }
-
-.navbar-default .nav > li.active>a,
-.navbar-default .nav>li.active>a:focus {
-    color: #9c27b0 !important;
-    background-color: transparent;
-}
-
-.navbar-default .nav > li.active>a:hover,
-.navbar-default .nav>li.active>a:focus:hover
-{
-    background-color: transparent;
-} */
-
-
-@media(min-width:768px) {
+/* @media(min-width:768px) {
     .navbar-default {
         border-color: transparent;
         background-color: transparent;
@@ -166,15 +159,15 @@ p {
     .navbar-default.affix .nav>li>a:focus:hover {
         color: #9c27b0;
     }
-}
+} */
 
 header {
     position: relative;
-    min-height: auto;
+    margin-top: 50px;
+    max-height: 270px;
     text-align: center;
-    color: #fff;
+    color: transparent;
     width: 100%;
-    background-color: #c9c9c9;
     background-image: url('../images/banner-desktop.png');
     background-repeat: no-repeat;
     background-size:100%;
@@ -188,36 +181,12 @@ header .header-content {
     z-index: 2;
 }
 
-header .header-content .inner h1 {
+header .header-content .inner {
     margin-top: 0;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
-header .header-content .inner p {
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.7);
-}
-
-#video-background {
-  position: absolute;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: 1;
-}
-
-#video-background.collapsing {
-  display:none;
-}
-
-footer {
-    background-color:#2d2d2d;
-}
 
 @media(min-width:768px) {
     .icon-lg {
