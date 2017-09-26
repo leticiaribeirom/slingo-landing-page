@@ -15,15 +15,9 @@ body {
 }
 
 hr {
-    max-width: 80px;
-    border-width: 2px;
-    opacity: 0.09;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-hr.light {
-    border-color: #fff;
+    border-width: 1.5px;
+    background-color: #6e5b83;
+    margin: 0px;
 }
 
 a {
@@ -43,6 +37,7 @@ p {
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .text-yellow {
@@ -96,12 +91,6 @@ p {
 
 }
 
-
-@media(min-width: 768px) {
-    .menu-icon {
-        display: none;
-    }
-}
 /* @media(min-width:768px) {
     .navbar-default {
         border-color: transparent;
@@ -171,22 +160,28 @@ header {
     background-image: url('../images/banner-desktop.png');
     background-repeat: no-repeat;
     background-size:100%;
+    background-position-y: 50px;
 }
 
-header .header-content {
+ header .header-content {
     position: relative;
     width: 100%;
     padding: 100px 15px;
     text-align: center;
     z-index: 2;
-}
+} 
 
 header .header-content .inner {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
+.nav-text p {
+    font-size: 12px;
+    top: 0;
+    display: inline;
+}
 
 @media(min-width:768px) {
     .icon-lg {
@@ -194,7 +189,7 @@ header .header-content .inner {
     }
     
     header {
-        min-height: 100%;
+        min-height: 270px;
     }
 
     header .header-content {
